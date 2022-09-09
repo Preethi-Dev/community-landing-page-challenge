@@ -1,6 +1,10 @@
 ## Community Landing Page Template
+
 `Html`
 `Css`
+
+![Preview image](./assets/images/landing-page-challenge.jpg)
+
 ### Devoted Design for Community landing page and Developed alike more flexibility to every breakpoint.
 
 ✅ A Unique brand Color System Chosen
@@ -15,5 +19,4 @@
 
 ✅ Made With Careful visual hierarchy
 
-
-*The project followed the points mentioned in the challenge description*
+_The project followed the points mentioned in the challenge description_
