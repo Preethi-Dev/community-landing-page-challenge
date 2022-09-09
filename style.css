@@ -649,7 +649,7 @@ footer {
 }
 
 /* Tablet styles */
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 730px) {
   .hero {
     grid-template-columns: [col-start] repeat(8, 1fr) [col-end];
   }
