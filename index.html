@@ -30,11 +30,27 @@
         </div>
         <div class="content__two">
           <p>incredibly</p>
-          <img src="./assets/images/Header-img-01.png" alt="" />
+          <img
+            src="./assets/images/Header-img-01.png"
+            srcset="
+              ./assets/images/Desktop-Header-img-01.png 374w,
+              ./assets/images/Header-img-01.png         252w
+            "
+            sizes="(min-width: 1000px) 374px, (min-width: 700px) 252px"
+            alt=""
+          />
           <p>with</p>
         </div>
         <div class="content__three">
-          <img src="./assets/images/Header-img-02.png" alt="" />
+          <img
+            src="./assets/images/Header-img-02.png"
+            srcset="
+              ./assets/images/Desktop-Header-img-02.png 396w,
+              ./assets/images/Header-img-02.png         258w
+            "
+            sizes="(min-width: 1000px) 396px, (min-width: 700px) 258px"
+            alt=""
+          />
           <p class="content__three--highlight">Community</p>
         </div>
       </div>

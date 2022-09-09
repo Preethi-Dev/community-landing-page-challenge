@@ -41,6 +41,7 @@
 body {
   background-color: var(--dark);
   color: var(--light);
+  overflow-x: hidden;
 }
 
 a {
@@ -135,7 +136,7 @@ a {
 
   align-self: flex-start;
   border-radius: 200px;
-  padding: 3.8rem 0.5rem;
+  padding: 3.8rem 0.7rem;
 }
 
 .highlights {
@@ -389,7 +390,7 @@ a {
   display: inline-block;
 
   border-radius: 200px;
-  padding: 4.75rem 0.5rem;
+  padding: 4.75rem 0.6rem;
 }
 
 .testimonial {
@@ -683,12 +684,14 @@ footer {
 
   .hero .content .content__two img {
     position: absolute;
+    z-index: 1;
     top: -5rem;
     right: -2rem;
   }
 
   .hero .content .content__three img {
     position: absolute;
+    z-index: 1;
     top: -13.5rem;
     left: 10.5rem;
   }
@@ -759,5 +762,175 @@ footer {
 
   .faq {
     padding: 6rem 3.5rem;
+  }
+}
+
+/* Laptop styles */
+@media screen and (min-width: 1000px) {
+  .hero {
+    grid-template-columns: [col-start] repeat(12, [col-start] 1fr) [col-end];
+    background-image: url(./assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero .content p {
+    font-size: var(--heading01);
+    line-height: 148px;
+  }
+
+  .community-description .features .feature {
+    max-width: 352px;
+  }
+
+  .community-instructors .instructors {
+    gap: 6rem;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1400px) {
+  .hero .content,
+  .hero .hero__sub-content {
+    grid-column: col-start 2 / span 10;
+    justify-self: stretch;
+    max-width: 1250px;
+  }
+
+  .hero .content {
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .hero .hero__sub-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+
+  .hero .content .content__one {
+    text-align: center;
+  }
+
+  .hero .content .content__two {
+    display: flex;
+    justify-content: space-between;
+    gap: 12rem;
+  }
+
+  .hero .content .content__two img {
+    top: -8rem;
+    right: 8rem;
+  }
+
+  .hero .content .content__three {
+    display: flex;
+    justify-content: end;
+  }
+
+  .hero .content .content__three img {
+    top: -12rem;
+    left: 5.5rem;
+  }
+
+  .highlights {
+    padding: 10rem 0;
+  }
+
+  .highlights p {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .highlights p,
+  .community-description h3,
+  .community-instructors h3 {
+    font-size: var(--heading02);
+    line-height: 136px;
+  }
+  .community-description,
+  .community-instructors,
+  .faq {
+    gap: 5rem;
+    padding: 10rem 0rem 5rem;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .groups {
+    position: relative;
+    padding: 10rem 0 5rem;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .groups .groups__list {
+    gap: 3rem;
+  }
+
+  .groups .groups__list .list {
+    max-width: 470px;
+  }
+
+  .groups a {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 2rem;
+    bottom: -2rem;
+    transform: none;
+
+    box-shadow: 34px -47px 76px rgba(0, 0, 0, 0.82);
+    border-radius: 338.131px;
+    transform: rotate(-30.43deg);
+  }
+
+  .groups .tags {
+    padding: 13.5rem 0;
+  }
+
+  .testimonial {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr) [col-end];
+    padding: 10rem 5rem 0;
+  }
+
+  .testimonial > * {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .testimonial .testimonial__profile {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .testimonial .testimonial__profile > * {
+    width: 100%;
+  }
+
+  .testimonial .testimonial__profile .profile__info {
+    padding-bottom: 2.5rem;
+  }
+
+  .testimonial .testimonial__feedback {
+    grid-column: col-start / span 8;
+    grid-row: 1;
+  }
+
+  .testimonial .testimonial__profile {
+    grid-column: span 10 / col-end;
+    grid-row: 1;
+  }
+
+  .faq {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faq .faq__list .faq__list__qn p {
+    max-width: 500px;
   }
 }
