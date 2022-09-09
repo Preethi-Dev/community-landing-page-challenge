@@ -303,10 +303,10 @@ a {
 }
 
 .groups .tags .tags__list:nth-child(1) {
-  transform: rotate(-12deg);
+  transform: rotate(-4deg);
 }
 .groups .tags .tags__list:nth-child(2) {
-  transform: rotate(12deg);
+  transform: rotate(4deg);
   box-shadow: 0px 23.7677px 1.98065px rgba(0, 0, 0, 0.25);
 }
 
@@ -726,10 +726,10 @@ footer {
 
   .community-instructors .instructors .instructor:first-child,
   .instructor:last-child {
-    transform: rotate(8deg);
+    transform: rotate(2deg);
   }
   .community-instructors .instructors .instructor:nth-child(2) {
-    transform: rotate(-8deg);
+    transform: rotate(-2deg);
   }
 
   .groups .tags {
